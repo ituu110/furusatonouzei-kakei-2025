@@ -1,2 +1,6 @@
 問い合わせツール
     Formspree
+
+分析
+    Google アナリティクス
+    Google Serch
