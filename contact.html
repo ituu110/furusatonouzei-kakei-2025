@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>お問い合わせ</h1>
+        <nav>
+            <a href="index.html">← トップページへ戻る</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <label for="name">お名前（必須）</label><br>
+                <input type="text" id="name" name="name" required style="width:100%;padding:10px;margin-bottom:15px;"><br>
+
+                <label for="email">メールアドレス（必須）</label><br>
+                <input type="email" id="email" name="email" required style="width:100%;padding:10px;margin-bottom:15px;"><br>
+
+                <label for="message">お問い合わせ内容（必須）</label><br>
+                <textarea id="message" name="message" required style="width:100%;height:150px;padding:10px;margin-bottom:15px;"></textarea><br>
+
+                <button type="submit" class="cta-btn">送信する</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 家計に助かるふるさと納税情報サイト</p>
+    </footer>
+</body>
+</html>

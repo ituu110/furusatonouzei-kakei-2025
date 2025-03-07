@@ -29,6 +29,100 @@
       defer
     ></script>
     <script src="script.js" defer></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "返礼品の配送時期は？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "申し込み後、約1ヶ月以内に発送されることが多いです。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "控除申請の方法は？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "確定申告やワンストップ特例制度を利用します。自治体ごとに手順が案内されるため、よく確認しましょう。"
+            }
+          }
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "冷凍食品セット（福岡県飯塚市）",
+          "image": [
+            "https://thumbnail.image.rakuten.co.jp/@0_mall/f402052-iizuka/cabinet/yoshiura/a6-011_sku.jpg"
+          ],
+          "description": "手間いらずで本格的な味が楽しめる冷凍食品セット。揚げ物や麺類などバラエティ豊かな品揃えで、忙しい子育て家庭の味方です。",
+          "offers": {
+            "@type": "Offer",
+            "price": "16000",
+            "priceCurrency": "JPY",
+            "availability": "https://schema.org/InStock"
+          },
+          "brand": { "@type": "Brand", "name": "福岡県飯塚市" }
+        },
+        {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "大容量おむつセット（愛媛県西条市）",
+          "description": "消耗品のおむつが大容量で届くため、家計負担を軽減できます。有名メーカーの高品質なおむつです。",
+          "offers": {
+            "@type": "Offer",
+            "price": "19000",
+            "availability": "https://schema.org/InStock"
+          },
+          "brand": { "@type": "Brand", "name": "愛媛県西条市" }
+        },
+        {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "無洗米10kg×6回（宮崎県都城市）",
+          "description": "毎月10kgの無洗米が届く便利な定期便タイプ。手間がなく、もちもちした食感で冷めても美味しく、お弁当やおにぎりにも最適。",
+          "offers": {
+            "@type": "Offer",
+            "price": "22000",
+            "availability": "https://schema.org/InStock"
+          },
+          "brand": { "@type": "Brand", "name": "宮崎県都城市" },
+          "sku": "SKU-9002"
+        },
+        {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "果物と野菜の詰め合わせ（北海道旭川市）",
+          "description": "新鮮な北海道産の旬な野菜と果物の定期便。季節に応じたバラエティ豊かな内容で栄養面も安心です。",
+          "offers": {
+            "@type": "Offer",
+            "price": "30000",
+            "availability": "https://schema.org/InStock"
+          },
+          "brand": { "@type": "Brand", "name": "北海道旭川市" }
+        },
+        {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "日用品詰め合わせ（岐阜県本巣市）",
+          "description": "ティッシュ、トイレットペーパー、洗剤など日用品の詰め合わせセット。実用的で防災対策にも有効です。",
+          "offers": {
+            "@type": "Offer",
+            "price": "13000",
+            "availability": "https://schema.org/InStock"
+          },
+          "brand": { "@type": "Brand", "name": "岐阜県本巣市" }
+        }
+      ]
+    </script>
   </head>
 
   <body>
@@ -48,9 +142,12 @@
 
     <main>
       <section id="about">
-        <h2>家計に助かるふるさと納税とは？</h2>
+        <h2>家計に助かるふるさと納税とは？子育て世帯の強い味方！</h2>
         <p>
-          ふるさと納税は自治体への寄付でお得な返礼品がもらえる制度です。税金控除も受けられるため、実質的な負担が少なくお得に様々な品を受け取れます。
+          子育て世帯にとって食費や日用品など、毎日の生活費は悩みの種ですよね。そこでおすすめしたいのが「ふるさと納税」。
+          ふるさと納税は、自分が応援したい自治体へ寄付をすると、その地域の特産品が返礼品として受け取れる制度です。
+          特に子育て中の家庭では、お米やおむつ、日用品など家計に直接役立つアイテムが返礼品としてもらえるため、節約や家計の支えに大きく貢献します。
+          さらに寄付金額の一部は翌年の税金から控除されるため、実質的な負担はほとんどありません。楽天を利用すれば、申し込みも簡単でポイントも貯まり、一石二鳥です！
         </p>
       </section>
 
@@ -692,16 +789,25 @@
       </section>
 
       <section id="faq">
-        <h2>ふるさと納税よくある質問</h2>
+        <h2>ふるさと納税よくある質問（FAQ）</h2>
         <details>
-          <summary>返礼品の配送時期は？</summary>
-          <p>申し込み後、約1ヶ月以内に発送されることが多いです。</p>
+          <summary>返礼品の配送時期はいつ頃ですか？</summary>
+          <p>自治体によりますが、申し込み後、約1ヶ月以内に発送されるケースがほとんどです。ただし、年末年始や繁忙期には多少遅れることもありますので、早めの申し込みをおすすめします。</p>
         </details>
+      
         <details>
-          <summary>控除申請の方法は？</summary>
-          <p>
-            確定申告やワンストップ特例制度を利用します。自治体ごとに手順が案内されるため、よく確認しましょう。
-          </p>
+          <summary>控除申請の具体的な方法を教えてください。</summary>
+          <p>ふるさと納税の控除申請は、主に「確定申告」と「ワンストップ特例制度」の2つがあります。確定申告は複数の自治体に寄付した場合や、副収入がある方に適しています。ワンストップ特例制度は、寄付先が5自治体以内で、確定申告をする必要のない給与所得者に便利な制度です。各自治体から送られる書類を確認しましょう。</p>
+        </details>
+      
+        <details>
+          <summary>ふるさと納税の上限額はどうやって計算すれば良いですか？</summary>
+          <p>寄付金の上限額は年収や家族構成によって異なります。総務省や各ふるさと納税サイトの「上限額シミュレーター」を利用すると、簡単に上限額を調べることができます。</p>
+        </details>
+      
+        <details>
+          <summary>申し込みはどのサイトがおすすめですか？</summary>
+          <p>楽天ふるさと納税なら、簡単に申し込みができるだけでなく、楽天ポイントも貯まり、キャンペーン期間を利用すればよりお得に返礼品を受け取れます。</p>
         </details>
       </section>
 
@@ -779,6 +885,10 @@
 
     <footer>
       <p>&copy; 2025 家計に助かるふるさと納税情報サイト</p>
+      <ul style="list-style:none; padding:0; margin:10px 0;">
+        <li style="display:inline; margin-right:15px;"><a href="privacy.html">プライバシーポリシー</a></li>
+        <li style="display:inline;"><a href="contact.html">お問い合わせ</a></li>
+      </ul>
       <p style="font-size: 12px; color: #888">
         当サイトは楽天アフィリエイトプログラムを利用しております。
       </p>
