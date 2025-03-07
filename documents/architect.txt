@@ -4,3 +4,7 @@
 分析
     Google アナリティクス
     Google Serch
+
+広告
+    Google AdSense(予定)
+    忍者AdMax(予定)
