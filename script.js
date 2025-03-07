@@ -1,12 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     const nav = document.querySelector("nav");
-    window.addEventListener("scroll", function () {
+    window.addEventListener("scroll", () => {
         if (window.scrollY > 50) {
-            nav.style.backgroundColor = "#ffffff";
-            nav.style.boxShadow = "0px 4px 2px -2px gray";
+            nav.classList.add("scrolled");
         } else {
-            nav.style.backgroundColor = "transparent";
-            nav.style.boxShadow = "none";
+            nav.classList.remove("scrolled");
         }
     });
 });

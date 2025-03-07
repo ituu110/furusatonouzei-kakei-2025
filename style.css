@@ -1,19 +1,16 @@
-/* styles.css */
 body {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #333;
     line-height: 1.8;
     max-width: 900px;
-    margin: 0 auto;
-    padding: 10px;
-    background-color: #fafafa;
+    margin: auto;
 }
 
 header {
-    background-color: #ffefd5;
+    background-color: #fff;
     padding: 20px;
     text-align: center;
-    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     margin-bottom: 20px;
 }
 
@@ -23,26 +20,21 @@ h1, h2 {
 
 nav ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     list-style: none;
     padding: 0;
     margin: 20px 0;
     background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     border-radius: 8px;
 }
 
-nav ul li {
-    flex: 1;
-    text-align: center;
-}
-
 nav ul li a {
-    display: block;
-    padding: 10px;
+    padding: 10px 15px;
     color: #333;
     text-decoration: none;
-    transition: all 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -53,41 +45,59 @@ nav ul li a:hover {
 section {
     margin-bottom: 30px;
     padding: 20px;
-    background-color: #fff;
+    background-color: #fafafa;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .cta-btn {
     display: inline-block;
-    background-color: #ff4500;
-    color: #ffffff;
     padding: 15px 25px;
-    border-radius: 8px;
+    background-color: #e67e22;
+    color: white;
     text-decoration: none;
-    font-weight: bold;
+    border-radius: 8px;
     transition: background-color 0.3s;
 }
 
 .cta-btn:hover {
-    background-color: #e59400;
+    background-color: #d35400;
 }
 
 footer {
     text-align: center;
-    margin-top: 40px;
-    padding: 10px;
-    font-size: 0.9rem;
-    color: #777;
-}
-
-h1, h2 {
-    color: #333;
+    padding: 15px;
+    color: #888;
+    border-top: 1px solid #eaeaea;
 }
 
 details {
     padding: 10px;
-    background-color: #f0f8ff;
+    background-color: #fafafa;
     border-radius: 8px;
-    box-shadow: inset 0 0 3px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+    }
+}
+
+nav {
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+nav.scrolled {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
